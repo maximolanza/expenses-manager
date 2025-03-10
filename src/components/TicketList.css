@@ -1,0 +1,53 @@
+/* src/components/TicketList.css */
+
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaciado entre tickets */
+    max-width: 800px; /* Ancho máximo para la lista */
+    margin: auto; /* Centrar la lista */
+}
+
+.ticket-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc; /* Borde para cada ticket */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    transition: box-shadow 0.3s; /* Transición suave para el efecto hover */
+}
+
+.ticket-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+.ticket-header {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para mejor organización */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.ticket-summary {
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear verticalmente */
+    margin-top: 0.5rem; /* Espaciado superior */
+}
+
+.ticket-details {
+    display: flex;
+    justify-content: flex-end; /* Alinear botones a la derecha */
+    gap: 0.5rem; /* Espaciado entre botones */
+    margin-top: 0.5rem; /* Espaciado superior */
+}
+
+.ticket-summary p {
+    margin: 0; /* Eliminar márgenes para un mejor alineamiento */
+    font-weight: 500; /* Hacer el texto un poco más destacado */
+}
+
+.ticket-header h3 {
+    margin: 0; /* Eliminar márgenes para un mejor alineamiento */
+    font-size: 1.2rem; /* Tamaño de fuente más grande para el ID del ticket */
+} 
