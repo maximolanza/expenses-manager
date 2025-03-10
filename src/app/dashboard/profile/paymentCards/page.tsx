@@ -32,7 +32,7 @@ export default function PaymentCardsPage() {
   const [deletingCard, setDeletingCard] = useState<PaymentCard | null>(null)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  // Cargar tarjetas cuando se obtiene el espacio de trabajo
+
   useEffect(() => {
     const loadCards = async () => {
       if (!workspace || !user) return
